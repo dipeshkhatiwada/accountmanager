@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff25c69b-5955-4f55-85ff-1eca0d314737" name="Default Changelist" comment="" />
+    <list default="true" id="ff25c69b-5955-4f55-85ff-1eca0d314737" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstract/_init_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abstract/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/migrations/0002_expenses.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expenses/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/migrations/0002_income.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/income/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accountmanager/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/accountmanager/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XVKm6vpJrwHwEYIzWHiNKSkhlx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -16,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
