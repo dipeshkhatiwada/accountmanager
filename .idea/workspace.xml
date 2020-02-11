@@ -2,29 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff25c69b-5955-4f55-85ff-1eca0d314737" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/expenses/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/income/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/add_expenses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/add_income.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/component/message.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/expenses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/expenses_category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/income.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/income_category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abstract/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/abstract/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accountmanager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accountmanager/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expenses/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/expenses/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expenses/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/expenses/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expenses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/expenses/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expenses/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/expenses/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/income/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/income/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/income/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/income/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_expenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_income.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_income.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/component/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/component/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_forgot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_forgot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/expenses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/expenses_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/expenses_category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/income.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/income.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/income_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/income_category.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +78,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="526" y="260" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1581398991377">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="526" y="260" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1366.738@0.0.1366.738" timestamp="1581398991377" />
     <state x="184" y="12" key="SettingsEditor" timestamp="1581127393807">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

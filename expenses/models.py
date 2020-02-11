@@ -10,6 +10,8 @@ class ExpensesCategoryManager(models.Manager):
 
 class ExpensesCategory(Category):
     objects = ExpensesCategoryManager()
+    def __str__(self):
+        return self.title
 
     class Meta:
         db_table = 'expenses_category'

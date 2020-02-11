@@ -3,7 +3,7 @@ from django.contrib.auth import logout, authenticate, login
 from django.shortcuts import render, HttpResponse, redirect, get_object_or_404
 from django.views import View
 from .models import Account
-
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
@@ -57,7 +57,9 @@ class ForgotPassword(View):
         return render(request, self.template_name)
 
 
-class Dashboard(View):
+class Dashboard(LoginRequiredMixin,  View):
+
+    login_url = '/account/login'
     template_name = 'dashboard.html'
 
     def get(self, request):
