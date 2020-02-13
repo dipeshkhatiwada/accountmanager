@@ -32,11 +32,11 @@ class ExpensesAddView(LoginRequiredMixin, View):
     template_name = 'add_expenses.html'
     def get(self,request):
         context = {
-            'form': ExpensesForm()
+            'form': ExpensesForm(request.user.id)
         }
         return render(request,self.template_name,context)
     def post(self, request, *args, **kwargs):
-        forms = ExpensesForm(request.POST, request.FILES or None)
+        forms = ExpensesForm(request.user.id, request.POST, request.FILES or None)
         if forms.is_valid():
             data = forms.save()
 
