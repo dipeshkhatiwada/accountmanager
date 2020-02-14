@@ -81,7 +81,7 @@
                         <td>{{income.description}}</td>
                         <td>{{income.date}}</td>
                         <td>
-                            <a href="{% url 'income_edit' income.id %}" class="btn btn-info" >Edit</a>
+                            <a href="{% url 'income_edit' income.slug %}" class="btn btn-info" >Edit</a>
                             <a href="{% url 'income_delete'  income.id %}" class="btn btn-danger" onclick="return confirm('Are you sure want to delete?')">delete</a>
                         </td>
                     </tr>
