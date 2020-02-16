@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ff25c69b-5955-4f55-85ff-1eca0d314737" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/income/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/income/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/income/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/income.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/income.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expenses/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/expenses/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/income/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/income/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,4 +1,5 @@
 {% extends 'base/base.html' %}
+{% load static %}
 {% block 'title' %}Dashboard {% endblock %}
 
  {% block 'sidebar' %}
@@ -11,11 +12,139 @@
 
  {% block 'footer' %}
 {% include 'component/footer.html' %}
+
+
  {% endblock %}
 
 {% block 'body' %}
 {% include 'component/message.html' %}
 <!-- Page Heading -->
 <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+<div class="row">
+ <div class="col-md-3 ml-5" style="padding:10px; color:white ; background-color:#3b7d62; border-radius:5px">
+  <h3>Total Day Income</h3>
+  <hr>
+  <span>Rs.{{dayincome.price__sum}}</span>
+ </div>
+ <div class="col-md-3 ml-5" style="padding:10px; color:white ; background-color:#c3145dba; border-radius:5px">
+  <h3>Total Day Expenses</h3>
+    <hr>
+  <span>Rs.{{dayexpenses.price__sum}}</span>
+ </div>
+ <div class="col-md-3 ml-5" style="padding:10px; color:white ; background-color:#4a8bdcd1; border-radius:5px">
+  <h3>Total Day Saving</h3>
+      <hr>
+  <span>Rs.{{daysaving}}</span>
+ </div>
+</div>
+<hr>
+<div class="row">
+  <!-- Income Chart -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Income Chart</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- Expenses Chart -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">No of income as per category Chart</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4">
+                    <canvas id="myPieChart2"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+
+
+<!-- Page level plugins -->
+  <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+
+<script>
+    // Set new default font family and font color to mimic Bootstrap's default styling
+    Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+    Chart.defaults.global.defaultFontColor = '#858796';
+
+    // Pie Chart Example
+    var ctx = document.getElementById("myPieChart");
+    var myPieChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: {{category_list|safe}},
+        datasets: [{
+          data: {{category_amount}},
+          backgroundColor: {{bcolor|safe}},
+          hoverBackgroundColor: {{ hovercolor|safe}},
+          hoverBorderColor: "rgba(234, 236, 244, 1)",
+        }],
+      },
+      options: {
+        maintainAspectRatio: false,
+        tooltips: {
+          backgroundColor: "rgb(255,255,255)",
+          bodyFontColor: "#858796",
+          borderColor: '#dddfeb',
+          borderWidth: 1,
+          xPadding: 15,
+          yPadding: 15,
+          displayColors: false,
+          caretPadding: 10,
+        },
+        legend: {
+          display: false
+        },
+        cutoutPercentage: 80,
+      },
+    });
+
+    // Pie Chart 2
+    var ctx = document.getElementById("myPieChart2");
+    var myPieChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: {{category_list|safe}},
+        datasets: [{
+          data: {{count_income}},
+          backgroundColor: {{hovercolor|safe}},
+          hoverBackgroundColor: {{ bcolor|safe}},
+          hoverBorderColor: "rgba(234, 236, 244, 1)",
+        }],
+      },
+      options: {
+        maintainAspectRatio: false,
+        tooltips: {
+          backgroundColor: "rgb(255,255,255)",
+          bodyFontColor: "#858796",
+          borderColor: '#dddfeb',
+          borderWidth: 1,
+          xPadding: 15,
+          yPadding: 15,
+          displayColors: false,
+          caretPadding: 10,
+        },
+        legend: {
+          display: false
+        },
+        cutoutPercentage: 80,
+      },
+    });
+
+
+</script>
 {% endblock %}
 

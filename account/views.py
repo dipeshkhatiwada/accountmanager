@@ -2,8 +2,12 @@ from django.contrib import messages
 from django.contrib.auth import logout, authenticate, login
 from django.shortcuts import render, HttpResponse, redirect, get_object_or_404
 from django.views import View
+
+from expenses.models import Expenses
 from .models import Account
 from django.contrib.auth.mixins import LoginRequiredMixin
+from income.models import Income
+import random
 
 # Create your views here.
 
@@ -63,7 +67,46 @@ class Dashboard(LoginRequiredMixin,  View):
     template_name = 'dashboard.html'
 
     def get(self, request):
-        return render(request, self.template_name)
+        # chart of income as per category
+        category_income = Income.objects.getIncomeByCategory(request.user.id)
+        category_list = list(category_income.keys())
+        category_amount = list(category_income.values())
+        dayincome = Income.objects.getCurrentDayIncome(request.user.id)
+        dayexpenses = Expenses.objects.getCurrentDayExpenses(request.user.id)
+        new_amt=[]
+        for c_amt in category_amount:
+            if c_amt == None:
+                new_amt.append(0.0)
+            else:
+                new_amt.append(c_amt)
+        # chart for no of income as per category
+        counted_income = list(Income.objects.countIncomeByCategory(request.user.id).values())
+        count_income = []
+        for no in counted_income:
+            count_income.append(no)
+        print(category_amount)
+        color_list = ['#4e73df', '#1cc88a', '#36b9cc','#2e59d9', '#17a673', '#2c9faf','c3145dba','#4a8bdcd1','3b7d62',]
+        day_saving = 0.0
+        if dayincome['price__sum'] and dayexpenses['price__sum']:
+            day_saving = dayincome['price__sum'] - dayexpenses['price__sum']
+        bcolor=[]
+        hovercolor=[]
+        for i in range(0,len(category_income)):
+            bcolor.append(color_list[random.randint(0,5)])
+            hovercolor.append(color_list[random.randint(0,5)])
+
+        context = {
+            'dayincome':dayincome,
+            'dayexpenses': dayexpenses,
+            'daysaving': day_saving,
+            'category_list':category_list,
+            'category_amount':new_amt,
+            'bcolor':bcolor,
+            'hovercolor':hovercolor,
+            'count_income': count_income,
+
+        }
+        return render(request, self.template_name,context)
 
 
 class Signout(View):
