@@ -18,11 +18,26 @@ from django.urls import path, include
 from account import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth.views import (
+PasswordResetView,
+PasswordResetConfirmView,
+PasswordResetDoneView,
+
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('account/', include('account.urls')),
     path('income/', include('income.urls')),
     path('expenses/', include('expenses.urls')),
+    path('forget-password/', PasswordResetView.as_view(),name='forget_password'),
+    path('reset-password/confirmation/<str:uidb64>/<str:token>',
+         PasswordResetConfirmView.as_view(template_name='change_password.html'),
+         name='password_reset_confirm'
+         ),
+    path('reset-password/done', PasswordResetDoneView.as_view(),name='password_reset_done'),
+
+    path('api/',include('api.urls')),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'account',
     'income',
     'expenses',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
